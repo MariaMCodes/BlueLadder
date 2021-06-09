@@ -1,0 +1,163 @@
+body{
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 180%;
+    color: #505050;
+    min-width: 510px; /*based on testing screen in google chrome this pixel width was found to be the min width before things got broken. This will FIX it to this width*/
+}
+.wrapper{ /*what we learned in previous lecture*/
+    max-width: 1200px;
+    padding: 0 40px; /* to get rid of padding at top of navigation pane*/
+    margin: auto;
+}
+.clearfix::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+header{
+    height: 600px;
+    background-image: url('../img/bg.png');
+    background-size: cover;
+}
+.header-small{
+    height: 240px;
+}
+/*nav{
+    dont have nav element so can be removed
+}*/
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    float: left;
+    padding: 25px 50px 25px 0;
+}
+nav ul .li-last{
+    padding-right: 0;  /*since this block is more specific than previous one (lines  32-34), it overrides it and this applies*/
+}
+nav ul li a{
+    color: white;
+    text-decoration: none; /*add these two styles to a element because even if add to li element they wont take effect*/
+    text-transform: uppercase; /*saves you from having to re-type everything again*/
+    font-weight: bold; /*saves you from having to re-type everything again*/
+}
+.link-active{  /*so that when on each web page the nav bar is highlighted in blue accordingly*/
+    color: #91cffa;
+    
+}
+nav ul li a:hover{
+    color: #91cffa;
+}
+#brand{
+    text-align: center;
+    padding: 100px;
+}
+#brand img{
+    height: 70px; /*to reduce size of image*/
+}
+#brand h1{
+    font-size: 78px;
+    color: #91cffa;
+    line-height: 70%;
+    padding-top: 20px;
+}
+#brand h1 span{
+    color: white;
+    font-size: 44px;
+    font-weight: normal; /*since construction is not in bold*/
+}
+#brand-small{
+    /*text-align: center;*/
+    padding: 20px;
+}
+#brand-small img{
+    float: left;
+    height: 70px; /*to reduce size of image*/
+    padding-right: 10px; /*shift text to the right*/
+    margin-top: -8px; /*will shift image to the top*/
+}
+#brand-small h1{
+    /*float: left; dont actually need this so remove. Want blueladder constructions next to ladder image when resizing webpage and then remove line 72*/
+    font-size: 50px;
+    color: white;
+    line-height: 100%;
+    padding-top: 20px;
+    margin-top: -8px;
+}
+section{
+    padding: 50px 0; /*padding just for top and bottom as wrapper did right and left*/
+}
+.intro{
+    text-align: center;
+}
+section p{
+    padding: 5px 0;
+}
+.text-lg{
+    font-size: 20px;
+}
+.bg-grey{
+    background-color: #f5f5f5;
+}
+h2{
+    font-size: 32px;
+    color: #7cccff;
+    padding-bottom: 20px;
+}
+.why{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+/*.why li{
+   dont need any styles so remove 
+}*/
+.team-img{
+    float: right;
+    padding: 0 0 15px 15px;
+}
+h3{
+    font-size: 20px;
+    padding-bottom: 5px;   
+}
+.about-list{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.service-block{
+    float: left;
+    width: 32%;
+    min-width: 300px; /*so they dont get so skinny when adjusting screen size as a result of the previous changes*/
+    margin-right: 2%;
+    background-color: #f5f5f5;
+    padding: 15px;
+    box-sizing: border-box; /* so that the width remains the same*/
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.service-block-last{
+    margin-right: 0; /*set this so that all the widths add up to 100%*/
+}
+.service-block img{
+    width: 100%; /*we want image to occupy 100% of the block*/
+    margin-bottom: 15px;
+    
+}
+.service-block h3{
+    font-size: 20px;   
+}
+/*.service-block p{
+   dont need additional styles so can be removed 
+}*/
+.google-map{
+    float: right;
+    margin: 0 0 20px 20px;
+}
+footer{
+    background-color: #404040;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px 0;
+}

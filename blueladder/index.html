@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- add this since when we checked for resolution, on a iphone x, the navigation bar is too small, which doesnt look good. It makes everything consistent and nothing breaks -->
+        <title>BlueLadder Constructions</title>
+        <link rel="stylesheet"
+              href="css/reset.css" type="text/css"> <!--need to reset browser styles first then only then we can apply our styles (below)-->
+        <link rel="stylesheet"
+              href="css/styles.css" type="text/css">
+    </head>
+    <body>
+            <header>
+                <div class="wrapper">
+                    <nav class="clearfix">  <!-- so image just doesnt get randomly placed anywhere-->
+                        <ul>
+                            <li><a class="link-active" href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li class="li-last"><!--li-last for resizing window without breaking the menu/making website more responsive for different screens--><a href="contact.html">Contact</a></li>
+                            <!--dont need http here as these are all local files-->
+                        </ul>
+
+
+                    </nav>   <!--similar to header tag and makes no difference but good practice to use for naviagtion pain-->
+                    <div id="brand">
+                        <img src="img/logo.png">
+                        <h1>BlueLadder <br><span>Constructions</span></h1> <!-- added span tags to construction since different color and font-->
+                    </div>
+                </div>
+            </header>
+            <section class="intro">
+                <div class="wrapper"> <!--to add spaces around text, left and right but need to add padding to the top-->
+                    <p>
+                        <span class="text-lg"><b>Lorem ipsum dolor</b></span> sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                    </p>
+                    <p>
+                        In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                    </p>
+                </div>
+            </section>
+            <section class="bg-grey">
+                <div class="wrapper">
+                    <h2>Why Choose Us?</h2>
+                    <ul class="why">
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</li>
+                    <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</li>
+                    <li>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</li>
+                    <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</li>
+                    <li>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</li>
+                    </ul>
+                </div>
+            </section>
+            <footer>
+                <div class="wrapper">
+                    Website designed by ABC Studios
+                </div>
+            </footer>
+        
+    </body>
+</html>
